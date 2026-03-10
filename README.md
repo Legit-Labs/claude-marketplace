@@ -11,9 +11,20 @@ Protect your AI-assisted development with real-time security guardrails, directl
 
 ## Installation
 
-```bash
-claude plugin add Legit-Labs/claude-marketplace
-```
+1. Add the marketplace in Claude Code:
+   ```
+   /plugin marketplace add Legit-Labs/claude-marketplace
+   ```
+
+2. Install the plugin:
+   ```
+   /plugin install vibeguard@legit-labs-claude-marketplace
+   ```
+
+3. Authenticate with your Legit Security account:
+   ```bash
+   legit auth
+   ```
 
 ## Supported Platforms
 
@@ -25,13 +36,7 @@ claude plugin add Legit-Labs/claude-marketplace
 
 ## How It Works
 
-After installation, authenticate with your Legit Security account:
-
-```bash
-legit auth
-```
-
-AI Guard then runs automatically in the background. It hooks into three points in the Claude Code lifecycle:
+AI Guard runs automatically in the background after installation. It hooks into three points in the Claude Code lifecycle:
 
 | Event | Protection |
 |-------|-----------|
