@@ -7,14 +7,23 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 OS="$(uname -s | tr '[:upper:]' '[:lower:]')"
 ARCH="$(uname -m)"
 
+case "$OS" in
+  mingw*|msys*|cygwin*) OS="windows" ;;
+esac
+
 case "$ARCH" in
   x86_64)  ARCH="amd64" ;;
   aarch64) ARCH="arm64" ;;
   arm64)   ARCH="arm64" ;;
 esac
 
-BINARY="${SCRIPT_DIR}/vibeguard-${OS}-${ARCH}"
-LEGIT_BINARY="${SCRIPT_DIR}/legit-${OS}-${ARCH}"
+EXT=""
+if [ "$OS" = "windows" ]; then
+  EXT=".exe"
+fi
+
+BINARY="${SCRIPT_DIR}/vibeguard-${OS}-${ARCH}${EXT}"
+LEGIT_BINARY="${SCRIPT_DIR}/legit-${OS}-${ARCH}${EXT}"
 
 if [ ! -f "$BINARY" ]; then
   echo "Unsupported platform: ${OS}-${ARCH}" >&2
