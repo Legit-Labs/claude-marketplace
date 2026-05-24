@@ -1,0 +1,11 @@
+{
+  "name": "vibeguard-windows",
+  "description": "AI Guard for Claude Code on Windows — protects against secrets leakage, prompt injection, hidden characters, and enforces MCP allow lists",
+  "version": "0.1.217",
+  "author": {
+    "name": "Legit Security",
+    "email": "support@legitsecurity.com"
+  },
+  "homepage": "https://www.legitsecurity.com",
+  "license": "Proprietary"
+}

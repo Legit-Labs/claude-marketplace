@@ -1,18 +1,19 @@
 {
   "name": "legit-security",
-  "owner": {
-    "name": "Legit Security",
-    "email": "support@legitsecurity.com"
-  },
-  "metadata": {
-    "description": "Legit Security plugins for Claude Code"
-  },
+  "owner": { "name": "Legit Security", "email": "support@legitsecurity.com" },
+  "metadata": { "description": "Legit Security plugins for Claude Code" },
   "plugins": [
     {
-      "name": "vibeguard",
-      "source": "./plugins/vibeguard",
-      "description": "AI Guard for Claude Code - protects against secrets leakage, prompt injection, hidden characters, and enforces MCP allow lists",
-      "version": "0.1.202"
+      "name": "vibeguard-unix",
+      "source": "./plugins/vibeguard-unix",
+      "description": "AI Guard for Claude Code on macOS and Linux — protects against secrets leakage, prompt injection, hidden characters, and enforces MCP allow lists",
+      "version": "0.1.217"
+    },
+    {
+      "name": "vibeguard-windows",
+      "source": "./plugins/vibeguard-windows",
+      "description": "AI Guard for Claude Code on Windows — protects against secrets leakage, prompt injection, hidden characters, and enforces MCP allow lists",
+      "version": "0.1.217"
     }
   ]
 }
