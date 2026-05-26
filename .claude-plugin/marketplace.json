@@ -7,13 +7,13 @@
       "name": "vibeguard-unix",
       "source": "./plugins/vibeguard-unix",
       "description": "AI Guard for Claude Code on macOS and Linux — protects against secrets leakage, prompt injection, hidden characters, and enforces MCP allow lists",
-      "version": "0.1.217"
+      "version": "0.1.220"
     },
     {
       "name": "vibeguard-windows",
       "source": "./plugins/vibeguard-windows",
       "description": "AI Guard for Claude Code on Windows — protects against secrets leakage, prompt injection, hidden characters, and enforces MCP allow lists",
-      "version": "0.1.217"
+      "version": "0.1.220"
     }
   ]
 }
