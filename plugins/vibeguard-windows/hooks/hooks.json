@@ -17,7 +17,8 @@
           {
             "type": "command",
             "shell": "powershell",
-            "command": "& \"${CLAUDE_PLUGIN_ROOT}/bin/vibeguard.ps1\" claude-hook user-prompt"
+            "command": "& \"${CLAUDE_PLUGIN_ROOT}/bin/vibeguard.ps1\" claude-hook user-prompt",
+            "timeout": 180
           }
         ]
       }
@@ -28,7 +29,8 @@
           {
             "type": "command",
             "shell": "powershell",
-            "command": "& \"${CLAUDE_PLUGIN_ROOT}/bin/vibeguard.ps1\" claude-hook before-tool-use"
+            "command": "& \"${CLAUDE_PLUGIN_ROOT}/bin/vibeguard.ps1\" claude-hook before-tool-use",
+            "timeout": 180
           }
         ]
       }
